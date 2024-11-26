@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheongShim Online</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="desktop main">
+        <div class="header">
+            <div class="rightHeader">
+                <div class="rightHeaderFirst">
+                    <img src="./image/list.png" class="headerMediumImg">
+                </div>
+                <div class="rightHeaderSecond">
+                    <img src="./image/favicon.png" class="headerBigImg">
+                    <div class="logoStatement nanumBold bigFont">
+                        CheongShim Online
+                    </div>
+                </div>
+            </div>
+            <div class="leftHeader">
+                <div class="userIcon">
+                    <img src="./image/person.png" class="headerMediumImg">
+                </div>
+                <div class="userName nanumBold bigFont">
+                    User
+                </div>
+                <div class="userSetting">
+                    <img src="./image/chevron-down.png" class="headerSmallImg">
+                </div>
+            </div>
+        </div>
+        <div class="cover">
+            <div class="sidebar">
+                <div class="flex-shrink-0 p-13">
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-1">
+                            <button class="p-13 sidebarBtn btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nanumBold mediumFont" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                                School Utility
+                            </button>
+                            <div class="collapse" id="home-collapse">
+                                <ul class="sidebarSubList btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="link-body-emphasis text-decoration-none rounded nanum smallFont">
+                                        <img src="./image/pencil.png" class="headerSmallImg">
+                                        <span>야자 신청</sapn>
+                                    </li>
+                                    <li class="link-body-emphasis text-decoration-none rounded nanum smallFont">
+                                        <img src="./image/stack-overflow_1.png" class="headerSmallImg">
+                                        <span>세미나실 신청</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="p-13 sidebarBtn btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nanumBold mediumFont" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                Dormitory Utility
+                            </button>
+                            <div class="collapse" id="dashboard-collapse">
+                                <ul class="sidebarSubList btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="link-body-emphasis text-decoration-none rounded nanum smallFont">
+                                        <img src="./image/pencil.png" class="headerSmallImg">
+                                        <span>야자 4교시 신청</span>
+                                    </li>
+                                    <li class="link-body-emphasis text-decoration-none rounded nanum smallFont">
+                                        <img src="./image/tools.png" class="headerSmallImg">
+                                        <span>이것 좀 고쳐주세요</span>
+                                    </li>
+                                    <li class="link-body-emphasis text-decoration-none rounded nanum smallFont">
+                                        <img src="./image/music-note.png" class="headerSmallImg">
+                                        <span>노래방</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainpage">
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = () => {for(let btn of document.querySelectorAll("button.p-13.sidebarBtn")) btn.click();}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="module" src="./javascript/utils.js"></script>
+    <script type="module" src="./javascript/test.js"></script>
+</body>
+</html>
